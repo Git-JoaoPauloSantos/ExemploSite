@@ -5,6 +5,7 @@
     --cor-tercearia: #eff3f4;
     --cor-primaria-texto: #fff;
     --cor-secundaria-texto: #191919;
+    --cor-secundaria-bg: #5c1011;
 }
 
 *{
@@ -36,7 +37,7 @@ input[type="submit"]{
 /* cabeçalho e banner */
 #header{
     min-height: 90vh;
-    background-image: url(../img/header-banner-01.jpg);
+    background-image: url(../img/predios.jpg);
     background-size: cover;
     background-position: center;
     color: var(--cor-primaria-texto);
@@ -287,4 +288,228 @@ input[type="submit"]{
 
 .data .text{
     text-transform: uppercase;
+}
+
+
+/* Depoimentos */
+#testimonials{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#testimonial-information{
+    padding: 3rem;
+}
+
+.author{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author .author-name{
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.author .author-job{
+    color: var(--cor-secundaria-texto);
+}
+
+.author img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Colaboradores */
+#team{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#team h2{
+    font-size: 3rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+#team h2 span{
+    color: var(--cor-principal);
+}
+
+#team .square{
+    background-color: var(--cor-tercearia);
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: -25px;
+}
+
+.employees{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.employee{
+    max-width: 22%;
+}
+
+.employee-name{
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+
+/* Contato */
+#contact{
+    background-color: var(--cor-principal);
+    gap: 0;
+}
+
+#contact-information{
+    position: relative;
+    text-align: left;
+    padding: 3rem;
+    flex: 1 1 0;
+}
+
+#contact-information .section-subtitle{
+    color: var(--cor-primaria-texto);
+
+}
+
+#contact-information i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-primaria-texto);
+    color: var(--cor-principal);
+}
+
+#contact-information form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact-information .form-control{
+    display: flex;
+    gap: 1rem;
+}
+
+#contact-information input, #contact-information textarea{
+    flex: 0.5;
+    padding: 1rem;
+    border: none;
+}
+
+#contact-information .btn{
+    align-self: start;
+    border: 2px solid var(--cor-primaria-texto);
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+#contact-information .btn:hover{
+    background-color: var(--cor-primaria-texto);
+    color: var(--cor-principal);
+}
+
+
+/* Rodapé */
+#footer{
+    color: var(--cor-primaria-texto);
+    background-color: var(--cor-secundaria-bg);
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 3rem 5rem;
+}
+
+#footer i{
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#footer a{
+    color: var(--cor-primaria-texto);
+}
+
+#contact-info, .links-container{
+    width: 20%;
+}
+
+.footer-brand{
+    margin-bottom: 2rem;
+}
+
+.footer-brand h2{
+    background-color: var(--cor-principal);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+.contact-info p{
+    margin-bottom: 1rem;
+}
+
+.contact-info p i{
+    background-color: transparent;
+    padding: 0;
+    color: var(--cor-principal);
+}
+
+.social-networks p{
+    margin-bottom: 1rem;
+}
+
+.networks{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#footer .networks i{
+    padding: 1rem;
+}
+
+.links-container h4{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.links-container nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-container nav a{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.phone-number{
+    display: flex;
+    border: 1px solid var(--cor-principal);
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.phone-info{
+    color: var(--cor-secundaria);
 }
